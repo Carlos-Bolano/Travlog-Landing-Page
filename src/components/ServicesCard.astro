@@ -1,0 +1,20 @@
+---
+interface Props {
+  imgUrl: string;
+  title: string;
+  description: string;
+}
+
+const { imgUrl, title, description } = Astro.props;
+---
+
+<article
+  class="flex flex-col justify-center items-center gap-6 bg-white shadow-2xl py-20 px-14 rounded-3xl"
+>
+  <img class="mb-8" src={imgUrl} alt="icono" />
+
+  <h3 class="text-2xl font-semibold text-blackcolor">{title}</h3>
+  <p class="text-lg text-graycolor text-center">
+    {description}
+  </p>
+</article>

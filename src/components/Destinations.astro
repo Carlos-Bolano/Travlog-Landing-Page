@@ -1,0 +1,80 @@
+---
+import ButtonAction from "./ButtonAction.astro";
+import DestinationsCard from "./DestinationsCard.astro";
+---
+
+<section class="my-28">
+  <header class="flex gap-4 justify-between items-center">
+    <div class="">
+      <span class="tracking-[4.6px;] uppercase text-lg text-rosa font-bold mb-6"
+        >Top Destination</span
+      >
+      <h2 class="text-5xl text-balance text-blackcolor font-bold">
+        Explore top destination
+      </h2>
+    </div>
+    <div class="flex gap-2 justify-between items-center">
+      <ButtonAction className="p-6 bg-white border">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-narrow-left"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#191825"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M5 12l14 0"></path>
+          <path d="M5 12l4 4"></path>
+          <path d="M5 12l4 -4"></path>
+        </svg>
+      </ButtonAction>
+      <ButtonAction className="p-6 text-whitecolor">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-narrow-right"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M5 12l14 0"></path>
+          <path d="M15 16l4 -4"></path>
+          <path d="M15 8l4 4"></path>
+        </svg>
+      </ButtonAction>
+    </div>
+  </header>
+  <div class="mt-20 grid grid-cols-3 gap-10">
+    <DestinationsCard
+      imgUrl="/img-destinations.png"
+      title="Paradise Beach, Bantayan Island"
+      cities="Rome, Italy"
+      rate="4.8"
+      price="550.16"
+    />
+    <DestinationsCard
+      imgUrl="/img-destinations3.png"
+      title="Ocean with full of Colors"
+      cities="Maldives"
+      rate="4.5"
+      price="20.99"
+    />
+    <DestinationsCard
+      imgUrl="/img-destinations2.png"
+      title="Mountain View, Above the cloud"
+      cities="United Arab Emeries "
+      rate="5.0"
+      price="150.99"
+    />
+  </div>
+</section>

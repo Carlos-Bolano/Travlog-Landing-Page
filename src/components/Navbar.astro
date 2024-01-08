@@ -1,0 +1,63 @@
+---
+import Button from "./Button.astro";
+---
+
+<nav
+  class="flex justify-between items-center gap-x-5 p-4 max-w-[1280px] mx-auto"
+>
+  <img src="/logo.svg" alt="Travlog Logo" />
+  <ul
+    class="md:flex lg:justify-between lg:items-center lg:gap-x-5 hidden md:visible"
+  >
+    <li>
+      <a class="py-2 px-4 font-semibold text-blackcolor" href="#">Home</a>
+    </li>
+    <li>
+      <a
+        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#">Discover</a
+      >
+    </li>
+    <li>
+      <a
+        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#">Social Details</a
+      >
+    </li>
+    <li>
+      <a
+        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#">Special Deals</a
+      >
+    </li>
+    <li>
+      <a
+        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#">Contact</a
+      >
+    </li>
+  </ul>
+  <div class="md:flex md:items-center hidden md:visible md:gap-1">
+    <Button href="#" className="bg-white text-blackcolor border">Log in</Button>
+    <Button href="#" className="text-whitecolor">Sing up</Button>
+  </div>
+  <button class="md:hidden" id="menu">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-menu-2"
+      width="44"
+      height="44"
+      viewBox="0 0 24 24"
+      stroke-width="2.5"
+      stroke="#2c3e50"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M4 6l16 0"></path>
+      <path d="M4 12l16 0"></path>
+      <path d="M4 18l16 0"></path>
+    </svg>
+  </button>
+</nav>

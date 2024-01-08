@@ -1,0 +1,31 @@
+---
+import ServicesCard from "./ServicesCard.astro";
+---
+
+<section class="my-28 flex justify-between items-center gap-10">
+  <div class="lg:w-[480px]">
+    <span class="tracking-[4.6px;] uppercase text-lg text-rosa font-bold"
+      >Services</span
+    >
+    <h2 class="text-3xl font-medium text-balance text-blackcolor">
+      Our top value categories for you
+    </h2>
+  </div>
+  <article class="grid grid-cols-3 gap-4">
+    <ServicesCard
+      title="Best Tour Guide"
+      description="What looked like a small patch of purple grass, above five feet."
+      imgUrl="/icon-services1.png"
+    />
+    <ServicesCard
+      title="Easy Booking"
+      description="Square, was moving across the sand in their direction."
+      imgUrl="/icon-services2.png"
+    />
+    <ServicesCard
+      title="Weather Forecast"
+      description="What looked like a small patch of purple grass, above five feet."
+      imgUrl="/icon-services3.png"
+    />
+  </article>
+</section>
