@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  bg: string;
+}
+
+const { title, description, bg } = Astro.props;
+---
+
+<article class="flex justify-between items-center gap-3 p-6 border rounded-3xl">
+  <div class={`p-4 rounded-3xl ${bg}`}>
+    <slot name="svg" />
+  </div>
+  <div class="flex flex-col gap-0">
+    <h3 class="text-xl font-bold text-blackcolor">{title}</h3>
+    <p class="text-lg text-graycolor">{description}</p>
+  </div>
+</article>

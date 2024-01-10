@@ -9,7 +9,7 @@ const { imgUrl, title, description } = Astro.props;
 ---
 
 <article
-  class="flex flex-col justify-center items-center gap-6 bg-white shadow-2xl py-20 px-14 rounded-3xl"
+  class="flex flex-col justify-center items-center gap-6 bg-white py-20 px-14 rounded-3xl"
 >
   <img class="mb-8" src={imgUrl} alt="icono" />
 
@@ -18,3 +18,12 @@ const { imgUrl, title, description } = Astro.props;
     {description}
   </p>
 </article>
+
+<style>
+  article {
+    box-shadow:
+      0px 0px 52px 0px rgba(0, 0, 0, 0.1),
+      0px 0px 50px 0px rgba(0, 0, 0, 0.1),
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+</style>

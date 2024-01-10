@@ -4,6 +4,10 @@ import Cover from "../components/Cover.astro";
 import Brands from "../components/Brands.astro";
 import Services from "../components/Services.astro";
 import Destinations from "../components/Destinations.astro";
+import Discounted from "../components/Discounted.astro";
+import Offers from "../components/Offers.astro";
+import Newsletter from "../components/Newsletter.astro";
+import "@fontsource/poppins";
 ---
 
 <html lang="en">
@@ -12,7 +16,7 @@ import Destinations from "../components/Destinations.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Travolg Landing Page</title>
   </head>
   <body class="relative">
     <svg
@@ -58,6 +62,9 @@ import Destinations from "../components/Destinations.astro";
       <Brands />
       <Services />
       <Destinations />
+      <Discounted />
+      <Offers />
+      <Newsletter />
     </main>
 
     <footer></footer>
