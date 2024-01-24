@@ -3,17 +3,20 @@ import ButtonAction from "./ButtonAction.astro";
 import DestinationsCard from "./DestinationsCard.astro";
 ---
 
-<section class="my-40">
-  <header class="flex gap-4 justify-between items-center">
+<section class="my-28">
+  <header class="flex flex-col md:flex-row gap-4 justify-between">
     <div class="">
-      <span class="tracking-[4.6px;] uppercase text-lg text-rosa font-bold mb-6"
+      <span
+        class="tracking-[4.6px;] uppercase text-lg text-rosa font-bold mb-6 block text-center md:text-left"
         >Top Destination</span
       >
-      <h2 class="text-5xl text-balance text-blackcolor font-bold">
+      <h2
+        class="text-5xl text-balance text-blackcolor font-bold text-center md:text-left"
+      >
         Explore top destination
       </h2>
     </div>
-    <div class="flex gap-2 justify-between items-center">
+    <div class="hidden sm:flex gap-2 justify-between items-center">
       <ButtonAction className="p-6 bg-white border">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +57,7 @@ import DestinationsCard from "./DestinationsCard.astro";
       </ButtonAction>
     </div>
   </header>
-  <div class="mt-20 grid grid-cols-3 gap-10">
+  <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
     <DestinationsCard
       imgUrl="/img-destinations.png"
       title="Paradise Beach, Bantayan Island"

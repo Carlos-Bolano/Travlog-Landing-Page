@@ -1,47 +1,62 @@
 ---
-import Button from "./Button.astro";
+import LinkButton from "./LinkButton.astro";
 ---
 
-<nav
-  class="flex justify-between items-center gap-x-5 p-4 max-w-[1280px] mx-auto"
->
-  <img src="/logo.svg" alt="Travlog Logo" />
-  <ul
-    class="md:flex lg:justify-between lg:items-center lg:gap-x-5 hidden md:visible"
-  >
-    <li>
-      <a class="py-2 px-4 font-semibold text-blackcolor" href="#">Home</a>
-    </li>
+<nav class="flex justify-between items-center p-4 max-w-[1280px] mx-auto z-50">
+  <img
+    class="max-w-[141px] min-w-[100px] min-h-full"
+    src="/logo.svg"
+    alt="Travlog Logo"
+  />
+  <ul class="md:flex justify-between items-center gap-x-5 nav-list hidden">
     <li>
       <a
-        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
-        href="#">Discover</a
+        title="Home"
+        class="py-2 px-2 font-semibold text-blackcolor"
+        href="#"
+        aria-label="Home tab">Home</a
       >
     </li>
     <li>
       <a
-        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
-        href="#">Social Details</a
+        title="Discover"
+        class="py-2 px-2 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#"
+        aria-label="discover tab">Discover</a
       >
     </li>
     <li>
       <a
-        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
-        href="#">Special Deals</a
+        title="Social Details"
+        class="py-2 px-2 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#"
+        aria-label="Social Details tab">Social Details</a
       >
     </li>
     <li>
       <a
-        class="py-2 px-4 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
-        href="#">Contact</a
+        title="Special Deals"
+        class="py-2 px-2 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#"
+        aria-label="Special Deals tab">Special Deals</a
       >
     </li>
+    <li>
+      <a
+        title="Contact"
+        class="py-2 px-2 font-semibold text-graycolor/50 hover:text-blackcolor transition-colors duration-500"
+        href="#"
+        aria-label="contact tab">Contact</a
+      >
+    </li>
+    <div class="hidden lg:flex items-center gap-1">
+      <LinkButton href="#" className="bg-white text-blackcolor border">
+        Log in
+      </LinkButton>
+      <LinkButton href="#" className="text-whitecolor">Sing up</LinkButton>
+    </div>
   </ul>
-  <div class="md:flex md:items-center hidden md:visible md:gap-1">
-    <Button href="#" className="bg-white text-blackcolor border">Log in</Button>
-    <Button href="#" className="text-whitecolor">Sing up</Button>
-  </div>
-  <button class="md:hidden" id="menu">
+  <button title="Menu burger" class="md:hidden" id="menu">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-menu-2"

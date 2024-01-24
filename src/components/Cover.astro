@@ -1,11 +1,18 @@
 ---
-import Button from "./Button.astro";
+import LinkButton from "./LinkButton.astro";
 ---
 
-<section class="max-w-full min-h-screen grid place-content-center mx-auto">
-  <article class="flex flex-col-reverse md:flex-row md:items-center">
-    <div class="flex flex-col gap-9">
-      <Button href="#" className="bg-white shadow-md text-rosa font-semibold">
+<section class="flex justify-between items-center">
+  <article
+    class="flex flex-col-reverse justify-center gap-5 md:flex-row items-center w-full"
+  >
+    <div
+      class="flex flex-col justify-center text-center md:text-left md:justify-between items-center md:items-start gap-9 md:basis-1/2 basis-full"
+    >
+      <LinkButton
+        href="#"
+        className="bg-white shadow-md text-rosa font-semibold"
+      >
         <svg
           slot="icon-right"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,17 +28,19 @@ import Button from "./Button.astro";
             fill="#F85E9F"></path>
         </svg>
         Explore the world!!
-      </Button>
+      </LinkButton>
       <h1 class="text-6xl font-bold text-pretty">
         Travel <span class="text-rosa">Top Destination</span> of the world
       </h1>
-      <p class="text-lg max-w-[427px] text-graycolor">
+      <p class="text-lg text-graycolor max-w-[430px]">
         We always make our customer happy by providing as many choices as
         possible
       </p>
       <div class="flex gap-x-5">
-        <Button href="#" className="text-whitecolor">Get started</Button>
-        <Button href="#" className="bg-transparent text-blackcolor border">
+        <LinkButton href="#" className="text-whitecolor">
+          Get started
+        </LinkButton>
+        <LinkButton href="#" className="bg-transparent text-blackcolor border">
           <svg
             slot="icon-left"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,32 +54,32 @@ import Button from "./Button.astro";
               fill="#5D50C6"></path>
           </svg>
           Watch demo
-        </Button>
+        </LinkButton>
       </div>
     </div>
-    <div class="pl-20 flex items-center gap-4 relative py-14">
+    <div
+      class="flex flex-row items-center justify-center relative pt-20 gap-4 md:basis-1/2 basis-full bggreen-600 w-full"
+    >
       <img
-        class="absolute -z-10 top-0 left-0 right-0"
+        class="absolute -z-10 top-5 left-0 right-0 mx-auto"
         src="/layer.svg"
-        alt=""
+        alt="bg in svg global orld"
       />
-      <div class="flex flex-col gap-4">
+      <div class="flex sm:flex-col gap-4">
         <img
-          class="max-w-[272px] max-h-[300px] rounded-3xl"
+          class="rounded-3xl hidden sm:block"
           src="/img-cover.png"
           alt="image 1"
         />
+        <img class="rounded-3xl" src="/img-cover2.png" alt="image 2" />
+      </div>
+      <div class="hidden sm:block">
         <img
-          class="max-w-[272px] max-h-[300px] rounded-3xl"
-          src="/img-cover2.png"
-          alt="image 2"
+          class="w-full h-full object-cover rounded-3xl"
+          src="/img-cover3.png"
+          alt="image 3"
         />
       </div>
-      <img
-        class="max-w-[272px] max-h-[400px] rounded-3xl"
-        src="/img-cover3.png"
-        alt="image 3"
-      />
     </div>
   </article>
 </section>

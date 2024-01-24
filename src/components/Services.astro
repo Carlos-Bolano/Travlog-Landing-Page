@@ -2,16 +2,19 @@
 import ServicesCard from "./ServicesCard.astro";
 ---
 
-<section class="my-40 flex justify-between items-center gap-10">
+<section
+  class="mb-28 flex flex-col lg:flex-row justify-between items-center gap-10"
+>
   <div class="lg:w-[480px]">
-    <span class="tracking-[4.6px;] uppercase text-lg text-rosa font-bold"
+    <span
+      class="tracking-[4.6px;] uppercase text-lg text-rosa font-bold text-center block"
       >Services</span
     >
-    <h2 class="text-3xl font-medium text-balance text-blackcolor">
+    <h2 class="text-3xl font-medium text-balance text-blackcolor text-center">
       Our top value categories for you
     </h2>
   </div>
-  <article class="grid grid-cols-3 gap-4">
+  <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <ServicesCard
       title="Best Tour Guide"
       description="What looked like a small patch of purple grass, above five feet."

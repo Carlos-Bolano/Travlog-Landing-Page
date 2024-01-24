@@ -7,57 +7,25 @@ import Destinations from "../components/Destinations.astro";
 import Discounted from "../components/Discounted.astro";
 import Offers from "../components/Offers.astro";
 import Newsletter from "../components/Newsletter.astro";
+import Footer from "../components/Footer.astro";
 import "@fontsource/poppins";
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>Travolg Landing Page</title>
+    <title>Travlog Landing Page</title>
   </head>
-  <body class="relative">
-    <svg
-      class="absolute size-[500px] top-0 left-0"
-      width="644"
-      height="777"
-      viewBox="0 0 644 777"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g opacity="0.5" filter="url(#filter0_f_832_818)">
-        <circle cx="-106" cy="27" r="250" fill="#FF5722"></circle>
-      </g>
-      <defs>
-        <filter
-          id="filter0_f_832_818"
-          x="-856"
-          y="-723"
-          width="1500"
-          height="1500"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"></feBlend>
-          <feGaussianBlur
-            stdDeviation="250"
-            result="effect1_foregroundBlur_832_818"></feGaussianBlur>
-        </filter>
-      </defs>
-    </svg>
-    <header
-      class="bg-white/20 backdrop-blur-md fixed top-0 left-0 right-0 z-50"
-    >
-      <Navbar />
-    </header>
-    <main class="max-w-[1280px] mx-auto px-2 pt-[70px] min-h-screen">
+  <body>
+    <main class="max-w-[1280px] mx-auto px-4 pt-[70px] min-h-screen">
+      <header
+        class="bg-white/20 backdrop-blur-md fixed top-0 left-0 right-0 z-50"
+      >
+        <Navbar />
+      </header>
       <Cover />
       <Brands />
       <Services />
@@ -65,8 +33,7 @@ import "@fontsource/poppins";
       <Discounted />
       <Offers />
       <Newsletter />
+      <Footer />
     </main>
-
-    <footer></footer>
   </body>
 </html>
