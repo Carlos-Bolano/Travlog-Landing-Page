@@ -8,7 +8,7 @@ const { href, className } = Astro.props;
 ---
 
 <a
-  class={`bg-purple py-2 px-6 capitalize  rounded-full font-medium flex gap-2 items-center justify-between max-w-fit ${className}`}
+  class={`bg-purple py-2 px-6 capitalize  rounded-full font-medium flex gap-2 items-center justify-between max-w-fit hover:text-white hover:bg-rosa transition-all duration-500 hover:-translate-y-[2px] ${className}`}
   href={href}
 >
   <slot name="icon-left" />
