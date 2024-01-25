@@ -61,23 +61,37 @@ import LinkButton from "./LinkButton.astro";
       class="flex flex-row items-center justify-center relative pt-20 gap-4 md:basis-1/2 basis-full bggreen-600 w-full"
     >
       <img
+        loading="lazy"
         class="absolute -z-10 top-5 left-0 right-0 mx-auto"
         src="/layer.svg"
         alt="bg in svg global orld"
       />
       <div class="flex sm:flex-col gap-4">
         <img
+          loading="lazy"
           class="rounded-3xl hidden sm:block"
-          src="/img-cover.png"
-          alt="image 1"
+          width="225"
+          height="248"
+          src="/img-cover.webp"
+          alt="image traveling"
         />
-        <img class="rounded-3xl" src="/img-cover2.png" alt="image 2" />
+        <img
+          loading="lazy"
+          class="rounded-3xl"
+          width="225"
+          height="248"
+          src="/img-cover2.webp"
+          alt="women at the montain"
+        />
       </div>
       <div class="hidden sm:block">
         <img
+          loading="lazy"
           class="w-full h-full object-cover rounded-3xl"
-          src="/img-cover3.png"
-          alt="image 3"
+          width="225"
+          height="363"
+          src="/img-cover3.webp"
+          alt="women taking a picture"
         />
       </div>
     </div>

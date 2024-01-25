@@ -12,6 +12,9 @@ const { imgUrl, price, title, rate, cities } = Astro.props;
 
 <article class="shadow-2xl rounded-[30px]">
   <img
+    loading="lazy"
+    width="389"
+    height="389"
     class="w-full object-cover rounded-t-3xl"
     src={imgUrl}
     alt={`${title} image`}
