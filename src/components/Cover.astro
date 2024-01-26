@@ -7,8 +7,12 @@ import LinkButton from "./LinkButton.astro";
     class="flex flex-col-reverse justify-center gap-5 md:flex-row items-center w-full"
   >
     <div
-      class="flex flex-col justify-center text-center md:text-left md:justify-between items-center md:items-start gap-9 md:basis-1/2 basis-full"
+      class="relative flex flex-col justify-center text-center md:text-left md:justify-between items-center md:items-start gap-9 md:basis-1/2 basis-full"
     >
+      <div
+        class="absolute top-0 left-0 size-full bg-rosa rounded-full blur-3xl opacity-20 -z-10"
+      >
+      </div>
       <LinkButton
         href="#"
         className="bg-white shadow-md text-rosa font-semibold"
