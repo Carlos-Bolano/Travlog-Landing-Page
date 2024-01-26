@@ -1,12 +1,13 @@
 ---
 interface Props {
   className?: string;
+  id: string;
 }
 
-const { className } = Astro.props;
+const { className, id } = Astro.props;
 ---
 
-<button class={`bg-purple rounded-full ${className}`}>
+<button id={id} class={`bg-purple rounded-full ${className}`}>
   <slot name="icon-left" />
   <slot />
   <slot name="icon-right" />

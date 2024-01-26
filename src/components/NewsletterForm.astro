@@ -2,7 +2,7 @@
 
 ---
 
-<form class={"flex flex-col md:flex-row justify-between mt-16 gap-8"}>
+<form class={"flex flex-col md:flex-row justify-between mt-16 gap-8"} id="form">
   <div class="relative">
     <svg
       class="absolute top-0 bottom-0 left-3 my-auto"
@@ -26,8 +26,24 @@
     />
   </div>
   <button
+    id="suscribe"
     class="bg-purple py-4 px-8 text-lg text-whitecolor rounded-xl capitalize font-medium shadow"
-    onclick="alert('this is a demo page, we can not save your email!')"
     >subscribe</button
   >
 </form>
+
+<script>
+  const handleonSubmit = (event: Event) => {
+    event.preventDefault();
+    alert(
+      "We can't save your email because this is a demo website, not a real website"
+    );
+  };
+
+  const form = document.getElementById("form") as HTMLFormElement;
+  if (form) {
+    form.addEventListener("submit", (event: Event) => {
+      handleonSubmit(event);
+    });
+  }
+</script>

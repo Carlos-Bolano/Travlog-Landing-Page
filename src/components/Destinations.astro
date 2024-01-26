@@ -3,7 +3,7 @@ import ButtonAction from "./ButtonAction.astro";
 import DestinationsCard from "./DestinationsCard.astro";
 ---
 
-<section class="my-28">
+<section class="my-28" id="discover">
   <header class="flex flex-col md:flex-row gap-4 justify-between">
     <div class="">
       <span
@@ -17,7 +17,7 @@ import DestinationsCard from "./DestinationsCard.astro";
       </h2>
     </div>
     <div class="hidden sm:flex gap-2 justify-between items-center">
-      <ButtonAction className="p-6 bg-white border">
+      <ButtonAction className="p-6 bg-white border" id="arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-arrow-narrow-left"
@@ -36,7 +36,7 @@ import DestinationsCard from "./DestinationsCard.astro";
           <path d="M5 12l4 -4"></path>
         </svg>
       </ButtonAction>
-      <ButtonAction className="p-6 text-whitecolor">
+      <ButtonAction className="p-6 text-whitecolor" id="arrow-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-arrow-narrow-right"
@@ -81,3 +81,16 @@ import DestinationsCard from "./DestinationsCard.astro";
     />
   </div>
 </section>
+
+<script>
+  const alertTheUser = () => {
+    alert("this is a demo ui web site, it is not a real web site");
+  };
+
+  const btnLeft = document
+    .getElementById("arrow")
+    ?.addEventListener("click", alertTheUser);
+  const btnright = document
+    .getElementById("arrow-button")
+    ?.addEventListener("click", alertTheUser);
+</script>
